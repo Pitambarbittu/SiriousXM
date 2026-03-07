@@ -433,7 +433,7 @@ export function Hero() {
       {/* ── Bottom scroll indicator ── */}
       <motion.div
         animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }}
-        style={{ position: "absolute", bottom: 28, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column" as const, alignItems: "center", gap: 6, zIndex: 10 }}
+        style={{ position: "absolute", bottom: -8, left: "45%", transform: "translateX(-50%)", display: "flex", flexDirection: "column" as const, alignItems: "center", gap: 6, zIndex: 10 }}
       >
         <span style={{ fontFamily: "var(--fb)", fontSize: 10, color: "rgba(255,255,255,0.2)", textTransform: "uppercase" as const, letterSpacing: "0.2em" }}>Scroll</span>
         <div style={{ width: 1, height: 32, background: "linear-gradient(to bottom, #00d68f60, transparent)" }} />
