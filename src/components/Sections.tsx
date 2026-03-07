@@ -423,8 +423,8 @@ export function Hero() {
               <Icon.MapPin />
             </div>
             <div>
-              <div style={{ fontFamily: "var(--fb)", fontWeight: 700, fontSize: 13, color: "#fff" }}>101-75 Fairmont Blvd S</div>
-              <div style={{ fontFamily: "var(--fb)", fontSize: 12, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>Lethbridge, Alberta · Mon–Fri 9AM–10PM</div>
+              <div style={{ fontFamily: "var(--fb)", fontWeight: 700, fontSize: 13, color: "#fff" }}>Lethbridge, Alberta · Mon–Fri 9AM–10PM</div>
+              {/* <div style={{ fontFamily: "var(--fb)", fontSize: 12, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>Lethbridge, Alberta · Mon–Fri 9AM–10PM</div> */}
             </div>
           </motion.div>
         </div>
