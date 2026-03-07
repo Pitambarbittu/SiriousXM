@@ -62,12 +62,6 @@ const HOURS = [
   { day: "Saturday", time: "10:00 AM – 6:00 PM" },
   { day: "Sunday", time: "Closed" },
 ];
-const STATS = [
-  { value: "800+", label: "Devices Repaired" },
-  { value: "98%", label: "Satisfaction Rate" },
-  { value: "Same Day", label: "Turnaround" },
-  { value: "90 Days", label: "Warranty" },
-];
 
 const LogoSVG = ({ height = 48 }: { height?: number }) => {
   const aspectRatio = 138 / 24;
@@ -133,7 +127,7 @@ export function Navbar() {
       >
         <div style={{ width: "100%", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* Logo */}
-          <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0 }}>
+          <a href="/#" style={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0 }}>
             <LogoSVG height={38} />
           </a>
 
@@ -699,7 +693,7 @@ export function Footer() {
             {[
               { ic: Icon.Phone, v: "(825) 402-6694", h: "tel:8254026694" },
               { ic: Icon.Mail, v: "help@siriusxmca.com", h: "mailto:help@siriusxmca.com" },
-              { ic: Icon.MapPin, v: "Lethbridge, AB T1K 6Z2", h: "#" },
+              { ic: Icon.MapPin, v: "Lethbridge, AB T1K 6Z2", h: "#contact" },
             ].map(item => (
               <a key={item.v} href={item.h} style={{ display: "flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,0.36)", textDecoration: "none", fontSize: 13, fontFamily: "var(--fb)", marginBottom: 11, transition: "color 0.2s" }}
                 onMouseEnter={e => (e.currentTarget.style.color = G)} onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.36)")}>
