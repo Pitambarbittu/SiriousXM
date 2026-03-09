@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* Hero CTA button — responsive text */
+.hero-cta-mobile { display: none; }
+.hero-cta-desktop { display: inline; }
+@media (max-width: 768px) {
+  .hero-cta-mobile { display: inline; }
+  .hero-cta-desktop { display: none; }
+}

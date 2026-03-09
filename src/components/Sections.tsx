@@ -260,6 +260,12 @@ export function Navbar() {
 
 
 export function Hero() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768);
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
   return (
     <section style={{
       position: "relative", width: "100%", minHeight: "100vh",
@@ -351,7 +357,9 @@ export function Hero() {
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "scale(1.04)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 0 60px #00d68f70, 0 4px 24px rgba(0,0,0,0.4)"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "scale(1)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 0 40px #00d68f50, 0 4px 20px rgba(0,0,0,0.3)"; }}
             >
-              <Icon.Phone /> Call Now — Free Quote
+              <Icon.Phone />
+              <span style={{ display: isMobile ? "none" : "inline" }}>Call Now — Free Quote</span>
+              <span style={{ display: isMobile ? "inline" : "none" }}>Call Now — (825) 402-6694</span>
             </a>
             <a href="#services" style={{
               display: "inline-flex", alignItems: "center", gap: 10,
