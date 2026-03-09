@@ -30,13 +30,12 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a href="/#" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center glow-green-sm group-hover:scale-110 transition-transform">
-              <span className="text-primary-foreground font-bold text-sm font-heading">SX</span>
-            </div>
-            <span className="text-xl font-bold font-heading text-foreground">
-              Sirius<span className="text-gradient">XMus</span>
-            </span>
+          <a href="/#" className="flex items-center group">
+            <img
+              src="/assets/SiriusXMCA.png"
+              alt="SiriusXMca"
+              className="h-10 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop nav */}

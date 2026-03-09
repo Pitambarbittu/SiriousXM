@@ -7,13 +7,12 @@ const Footer = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center glow-green-sm">
-                <span className="text-primary-foreground font-bold text-xs font-heading">SX</span>
-              </div>
-              <span className="text-lg font-bold font-heading text-foreground">
-                Sirius<span className="text-gradient">XMus</span>
-              </span>
+            <div className="mb-4">
+              <img
+                src="/assets/SiriusXMCA.png"
+                alt="SiriusXMca"
+                className="h-10 w-auto object-contain"
+              />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
               Expert repair solutions for all your devices. Fast, reliable, and professional service you can trust.
@@ -41,8 +40,8 @@ const Footer = () => {
               <a href="tel:8254026694" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Phone className="w-4 h-4" /> (825) 402-6694
               </a>
-              <a href="mailto:help@siriusxmus.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
-                <Mail className="w-4 h-4" /> help@siriusxmus.com
+              <a href="mailto:help@siriusxmca.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Mail className="w-4 h-4" /> help@siriusxmca.com
               </a>
               <div className="flex items-start gap-2 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
@@ -54,7 +53,7 @@ const Footer = () => {
 
         <div className="line-glow mt-12 mb-8" />
         <div className="text-center text-muted-foreground text-xs">
-          © {new Date().getFullYear()} SiriusXMus. All rights reserved.
+          © {new Date().getFullYear()} SiriusXMca. All rights reserved.
         </div>
       </div>
     </footer>
