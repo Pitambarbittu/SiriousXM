@@ -719,7 +719,7 @@ export function Footer() {
     color: "rgba(255,255,255,0.2)"
   }}
 >
-  © {new Date().getFullYear()} SiriosXM · Lethbridge, Alberta · All rights reserved.
+  © {new Date().getFullYear()} SiriosXMca · Lethbridge, Alberta · All rights reserved.
   <div
     style={{
       marginTop: 6,

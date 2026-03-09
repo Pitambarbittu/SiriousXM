@@ -1,4 +1,4 @@
-# SiriusXMus - Setup Instructions
+# SiriusXMca - Setup Instructions
 
 ## 1. Install dependencies
 ```bash
