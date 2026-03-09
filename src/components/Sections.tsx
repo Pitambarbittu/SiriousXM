@@ -613,7 +613,7 @@ export function Contact() {
               {[
                 { ic: Icon.Phone, l: "Phone", v: "(825) 402-6694", h: "tel:8254026694" },
                 { ic: Icon.Mail, l: "Email", v: "help@siriusxmca.com", h: "mailto:help@siriusxmca.com" },
-                { ic: Icon.MapPin, l: "Address", v: "101-75 Fairmont Blvd S, Lethbridge, AB T1K 6Z2", h: "#" },
+                { ic: Icon.MapPin, l: "Address", v: "Lethbridge, Alberta", h: "#" },
               ].map(item => (
                 <a key={item.l} href={item.h} style={{ display: "flex", alignItems: "flex-start", gap: 14, marginBottom: 20, textDecoration: "none" }}
                   onMouseEnter={e => { const el = (e.currentTarget as HTMLElement).querySelector(".cv") as HTMLElement; if (el) el.style.color = G; }}

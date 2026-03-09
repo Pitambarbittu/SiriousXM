@@ -78,9 +78,7 @@ const Contact = () => {
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Address</p>
                   <p className="text-foreground font-semibold leading-relaxed">
-                    101-75 Fairmont Blvd S<br />
-                    Lethbridge, Alberta<br />
-                    T1K 6Z2
+                    Lethbridge, Alberta
                   </p>
                 </div>
               </div>
